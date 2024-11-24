@@ -132,7 +132,7 @@ import torch.nn as nn
 # Load the trained model
 model = models.resnet18(pretrained=True)
 model.fc = nn.Linear(model.fc.in_features, 2)  # For binary classification
-model.load_state_dict(torch.load('madhubani_classifier.pth'))
+model.load_state_dict(torch.load('madhubani_classifier_new.pth'))
 model.eval()
 
 # Define the transformation for the input image
